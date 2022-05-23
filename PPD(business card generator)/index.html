@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content=""><meta name="author" content="">
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+<!-- Bootstrap core CSS -->
+<link href="index.css" rel="stylesheet">
+
+<!-- ss -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://foliotek.github.io/Croppie/croppie.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="dist/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" > </script>
+  <script src="https://foliotek.github.io/Croppie/croppie.js" > </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" > </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TRZPJ5');</script>
+  <!-- End Google Tag Manager -->
+		</head>
+		<body>
+        <div style="text-align:center; margin-top: 30px;"><img src="img/logo.png"/></div>
+        <div style=" height: 30px;
+
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);"></div>
+
+
+             <div class="container">
+
+			 <h1 class="text-center">Generator Wizytówek</h1>
+
+
+ <ul class="menu-list">
+   <li class="current"> <a href="index.html">Ubezpiecz się</a></li>
+   <li > <a href="CarPage.html">Samochód</a></li>
+   <li > <a href="HousePage.html">Dom</a></li>
+   <li > <a href="WheatPage.html">Uprawy</a></li>
+   <li > <a href="LoanPage.html">Kredyt</a></li>
+ </ul>
+
+
+<div class="row">
+
+
+
+<div class="col-lg-6">
+  <div>
+    <div id="canvasWrapper" class="mt-4">
+    </div>
+  </div>
+</div>
+
+
+  <div class="col-lg-6">
+    
+    <h3>Imie Nazwskio</h3>
+    <div class="box">
+      <div>
+        <input id="textTop" type="hidden" class="block" placeholder="Top text" />
+      </div>
+      <div>
+       <textarea style="width: 233px"  onkeypress="limitLines(this, 5)"  onkeydown="removeLines(this)" id="textBottom"></textarea>
+      </div>
+    </div>
+    <h3>Numer telefonu</h3>
+    <div class="box">
+      <div>
+        <input id="textTop" type="hidden" class="block" placeholder="Top text" />
+      </div>
+      <div>
+       <textarea style="width: 233px"  onkeypress="limitLines(this, 5)"  onkeydown="removeLines(this)" id="textMid"></textarea>
+      </div>
+    </div>
+    <h3>Adres - Urząd Pocztowy</h3>
+    <div class="box">
+      <div>
+        <input id="textTop" type="hidden" class="block" placeholder="Top text" />
+      </div>
+      <div>
+       <textarea style="width: 233px"  onkeypress="limitLines(this, 5)"  onkeydown="removeLines(this)" id="textBot"></textarea>
+      </div>
+    </div>
+    
+
+
+  <div>
+    <h3 id="showNone">Zamień obraz </h3>
+    <div class="boxNone2">
+      <div>
+       
+
+      </div>
+      <div>
+
+        <label class="cabinet center-block">
+          <figure>
+            <span class="gambar"> Zamień obraz</span>
+          </figure>
+          <input type="file" type='file' onchange="readURL(this);" class="item-img file center-block" accept="image/png, image/jpeg" name="file_photo"/>
+		
+        </label>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div>
+        <input id="textSizeTop" type="hidden" min="2" max="50" step="2" />
+      </div>
+      <div>
+        <input id="textSizeBottom" type="hidden" min="2" max="50" step="2" />
+      </div>
+    </div>
+
+    <input id="trueSize" type="hidden"/>
+
+    <div class="boxNone">
+      <h3 class="mb-4 pt-4"> Wybierz tekst</h3>
+      <div class="my-3">
+        <input type="checkbox" id="horns" name="horns" value="&#9632; samochód">
+        <label for="horns" class="label-checkbox">samochód</label>
+      </div>
+      <div class="my-3">
+        <input type="checkbox" id="horns2" name="horns" value="&#9632; mieszkanie">
+        <label for="horns2" class="label-checkbox">mieszkanie</label>
+      </div>
+      <div class="my-3">
+        <input type="checkbox" id="horns3" name="horns" value="&#9632; życie">
+        <label for="horns3" class="label-checkbox">życie</label>
+      </div>
+	    <div class="my-3">
+        <input type="checkbox" id="horns4" name="horns" value="&#9632; podróż zagraniczną">
+        <label for="horns4" class="label-checkbox"> </label>
+      </div>
+	      <div class="my-3">
+        <input type="checkbox" id="horns5" name="horns" value="&#9632; swoją firmę">
+        <label for="horns5" class="label-checkbox"> swoją firmę</label>
+      </div>
+    </div>
+
+      
+      <div>
+        <button id="export">Generuj grafikę</button>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+</div>
+			 </div>
+
+</div>
+             <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title" id="myModalLabel">
+                       <?=multiLanguage( "Edit Foto" , "Edit Photo" )?></h4>
+                   </div>
+                   <div class="modal-body">
+                     <div id="upload-demo" class="center-block"></div>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+                     <button type="button" id="cropImageBtn" class="btn btn-primary">Skaluj</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+
+
+             <script src="main.js" > </script>
+        </body>
+</html>

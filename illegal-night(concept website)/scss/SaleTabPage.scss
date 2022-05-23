@@ -1,0 +1,447 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  .FirstBox {
+    height: 150px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    .FirstRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .Media {
+        padding-left: 50px;
+        i {
+          padding-top: 25px;
+          font-size: 45px;
+          padding-right: 20px;
+          color: black;
+        }
+      }
+      .regLog {
+        display: grid;
+        grid-template-columns: 70px 170px 90px 70px;
+        padding-right: 10px;
+        margin-top: 20px;
+        i {
+          font-size: 30px;
+          padding-right: 10px;
+        }
+        button {
+          position: absolute;
+          border: 0px;
+          padding-bottom: 20px;
+          left: 94%;
+          background-color: white;
+        }
+        input {
+          border: 0;
+          border-bottom: solid 1px rgb(143, 143, 143);
+          font-size: 20px;
+          width: 160px;
+        }
+        input:focus {
+          outline-width: 0;
+          border-bottom: solid 1px black;
+        }
+        .fa-solid.fa-basket-shopping {
+          padding-left: 20px;
+        }
+      }
+      .tabs {
+        position: absolute;
+        display: inline-grid;
+        grid-template-columns: 160px 160px 160px 160px;
+        left: 32%;
+        bottom: 0px;
+        font-family: Arial;
+        word-spacing: 120px;
+        font-weight: bold;
+        button {
+          background-color: white;
+          border: 0;
+          cursor: pointer;
+          font-size: 22px;
+          font-family: Arial, Helvetica;
+          border: 2px solid transparent;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+        button:hover {
+          border-bottom: 2px solid black;
+        }
+        #sale {
+          color: red;
+          height: 50px;
+        }
+      }
+      .Logo {
+        padding-left: 14.7%;
+        img {
+          width: 60%;
+        }
+      }
+    }
+    .profile {
+      position: absolute;
+      left: 86%;
+      top: 64%;
+      font-family: Arial;
+      display: none;
+      padding: 20px;
+      flex-direction: column;
+      background-color: white;
+      border: solid 1px black;
+      font-size: 25px;
+      padding-top: 0;
+      button {
+        font-size: 20px;
+        color: white;
+        border: 0;
+        padding: 10px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        background-color: black;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      p {
+        margin-bottom: 25px;
+        padding-top: 15px;
+      }
+    }
+  }
+  .SecondBox {
+    padding-top: 150px;
+    .clothesTab {
+      overflow: hidden;
+      display: none;
+      .clothesRow {
+        position: absolute;
+        display: flex;
+        padding: 40px;
+        left: 31.2%;
+        flex-direction: column;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+        font-family: Arial, Helvetica, sans-serif;
+        p {
+          font-size: 25px;
+        }
+        a {
+          font-size: 25px;
+          color: black;
+          text-decoration: none;
+          padding-top: 10px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .gamingTab {
+      overflow: hidden;
+      display: none;
+      .gamingRow {
+        position: absolute;
+        display: flex;
+        padding: 40px;
+        margin-left: 40.6%;
+        flex-direction: column;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+        font-family: Arial, Helvetica, sans-serif;
+        p {
+          font-size: 25px;
+        }
+        a {
+          font-size: 25px;
+          color: black;
+          text-decoration: none;
+          padding-top: 10px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .gadgetTab {
+      overflow: hidden;
+      display: none;
+      .gadgetRow {
+        position: absolute;
+        display: flex;
+        padding: 40px;
+        left: 50%;
+        flex-direction: column;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+        font-family: Arial, Helvetica, sans-serif;
+        p {
+          font-size: 25px;
+        }
+        a {
+          font-size: 25px;
+          color: black;
+          text-decoration: none;
+          padding-top: 10px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .saleTab {
+      overflow: hidden;
+      display: none;
+      .saleRow {
+        position: absolute;
+        display: flex;
+        padding: 40px;
+        left: 59.6%;
+        flex-direction: column;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+        font-family: Arial, Helvetica, sans-serif;
+        a {
+          font-size: 25px;
+          color: black;
+          text-decoration: none;
+          padding-top: 10px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .twoHalfs {
+      padding-left: 10%;
+      background-color: #f0f0f0;
+      padding-bottom: 100px;
+      display: grid;
+      grid-template-columns: 17.5% 82.5%;
+      padding-top: 4%;
+      .leftHalf {
+        padding-top: 25px;
+        width: 50%;
+        font-size: 20px;
+        margin-left: 10%;
+        :nth-child(1) {
+          font-size: 30px;
+          text-decoration: none;
+          color: black;
+          font-family: Arial;
+        }
+        .categories {
+          padding-left: 20px;
+          display: flex;
+          flex-direction: column;
+          :nth-child(1) {
+            font-size: 20px;
+          }
+          a {
+            padding-top: 20px;
+            text-decoration: none;
+            color: black;
+            font-family: Arial;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .rightHalf {
+        .rightFirstRow {
+          display: flex;
+          flex-direction: row;
+          margin-left: 10%;
+          .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            button {
+              background-color: #f0f0f0;
+              border: 0;
+              font-size: 25px;
+              font-family: Arial;
+              cursor: pointer;
+            }
+            p {
+              font-size: 25px;
+              font-family: Arial;
+              padding-left: 590px;
+            }
+          }
+          .sorting {
+            position: absolute;
+            margin-top: 3%;
+            .sortByPrice {
+              position: absolute;
+              display: none;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              width: 200px;
+              border: 1px solid black;
+              background-color: white;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              :nth-child(3) {
+                background-color: black;
+                color: white;
+                display: flex;
+                width: 200px;
+                justify-content: center;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-top: 5px;
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: 10px;
+                margin-right: 10px;
+                letter-spacing: 1px;
+                border: 0;
+                cursor: pointer;
+              }
+              :nth-child(1),
+              :nth-child(2) {
+                border: 0;
+                background-color: white;
+                font-size: 23px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-bottom: 5px;
+                width: 200px;
+                cursor: pointer;
+              }
+            }
+            .sortByRange {
+              position: absolute;
+              display: none;
+              margin-left: 140px;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              width: 220px;
+              border: 1px solid black;
+              background-color: white;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              :nth-child(3) {
+                background-color: black;
+                color: white;
+                display: flex;
+                width: 200px;
+                justify-content: center;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-top: 5px;
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: 10px;
+                margin-right: 10px;
+                letter-spacing: 1px;
+                border: 0;
+                cursor: pointer;
+              }
+              :nth-child(1),
+              :nth-child(2) {
+                margin-left: 10px;
+                border: 0;
+                border-bottom: solid 2px rgb(141, 141, 141);
+                opacity: 0.7;
+                font-size: 23px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-bottom: 5px;
+                width: 200px;
+              }
+              :nth-child(1):hover,
+              :nth-child(2):hover {
+                border-bottom: solid 2px black;
+              }
+            }
+          }
+        }
+      }
+      .rightSecondRow {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        margin-left: 10%;
+        .item {
+          padding: 10px;
+          a {
+            text-decoration: none;
+            color: black;
+            font-family: Arial;
+            font-size: 19px;
+            img {
+              width: 100%;
+              box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+              margin-bottom: 30px;
+            }
+          }
+          p {
+            font-size: 19px;
+            font-family: Arial;
+          }
+        }
+      }
+    }
+  }
+}
+.whiteBox {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+.ThirdBox {
+  margin-top: 200px;
+  background-color: #f2f2f2;
+  .links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .row {
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      a {
+        padding-top: 20px;
+        font-family: Arial;
+        text-decoration: none;
+        color: black;
+        opacity: 0.7;
+      }
+      p {
+        font-size: 25px;
+        font-family: Arial;
+        opacity: 0.7;
+        font-weight: bold;
+      }
+    }
+  }
+  .payment {
+    display: flex;
+    justify-content: center;
+    #payment {
+      margin-top: 50px;
+      width: 60%;
+      margin-bottom: 50px;
+    }
+  }
+}
