@@ -1,3 +1,4 @@
-# Web-projects
+# Illegal night - concept website
 
-Some of my Web projects, mainly vanilla js, some canvas
+This is my first web project with vanilla js.
+It is a concept website for a company called 'Illegal night'
